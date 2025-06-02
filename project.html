@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HemoVida</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+    <style>
+    .form-check-input:checked {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo_horizontal.png" alt="HemoVida" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon">
+                    <i class="fs-4 text-danger fa-solid fa-burger"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="about.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fw-bold" href="project.html">Projeto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="team.html">Equipa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-danger">Entrar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="hero-section bg-danger text-white py-5" style="background: linear-gradient(rgba(220, 53, 69, 0.9), rgba(220, 53, 69, 0.9)); background-size: cover;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">O Projeto HemoVida</h1>
+                    <p class="lead mb-4">A tecnologia a serviço da vida</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 py-5">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+                <h2 class="fw-bold mb-3">Sobre o Desenvolvimento</h2>
+                <p class="lead">Uma solução completa para gestão de doações de sangue</p>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="pe-lg-5">
+                    <p>O projeto <span class="text-danger fw-bold">HemoVida</span> foi desenvolvido como parte do CET <em>Tecnologias e Programação de Sistemas Informáticos</em>, com foco especial na UFCD 5085 <em>Criação de estrutura de base de dados em SQL</em>.</p>
+                    <p>Nosso objetivo foi criar uma plataforma robusta que integrasse todas as etapas do processo de doação de sangue, desde o cadastro de doadores até a distribuição para hospitais.</p>
+                    <div class="d-flex align-items-center mb-3">
+                    <div class="text-danger p-3" style="width: 70px; height: 70px;">
+                            <i class="fas fa-heart fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-0">Missão Cumprida</h5>
+                            <p class="text-muted mb-0">Entregamos um sistema completo em apenas 3 meses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <img src="images/logo_square.png" class="img-fluid w-100" alt="Desenvolvimento do Projeto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-light py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">Funcionalidades Principais</h2>
+                    <p class="lead">Tudo que o sistema oferece para a gestão das doações</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="text-danger mb-3" style="width: 70px; height: 70px;">
+                                <i class="fa-4x fa-solid fa-user-shield"></i>
+                            </div>
+                            <h5 class="fw-bold">Autenticação</h5>
+                            <ul class="text-muted">
+                                <li>Login seguro para funcionários</li>
+                                <li>Controle de níveis de acesso</li>
+                                <li>Recuperação de senha</li>
+                                <li>Proteção de dados sensíveis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="text-danger mb-3" style="width: 70px; height: 70px;">
+                                <i class="fa-4x fa-solid fa-user-group"></i>
+                            </div>
+                            <h5 class="fw-bold">Gestão de Doadores</h5>
+                            <ul class="text-muted">
+                                <li>Cadastro completo</li>
+                                <li>Histórico de doações</li>
+                                <li>Prontuário eletrônico</li>
+                                <li>Notificações personalizadas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="text-danger mb-3" style="width: 70px; height: 70px;">
+                                <i class="fa-4x fa-solid fa-file-medical"></i>
+                            </div>
+                            <h5 class="fw-bold">Sistema de Triagem</h5>
+                            <ul class="text-muted">
+                                <li>Elegibilidade automática</li>
+                                <li>Questionário de saúde</li>
+                                <li>Registro de contraindicações</li>
+                                <li>Laudo médico digital</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="text-danger mb-3" style="width: 70px; height: 70px;">
+                                <i class="fa-4x fa-solid fa-calendar"></i>
+                            </div>
+                            <h5 class="fw-bold">Agenda de Doações</h5>
+                            <ul class="text-muted">
+                                <li>Agenda online</li>
+                                <li>Lembretes automáticos</li>
+                                <li>Controle de capacidade</li>
+                                <li>Cancelamento e reagendamento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="text-danger mb-3" style="width: 70px; height: 70px;">
+                                <i class="fa-4x fa-solid fa-eye-dropper"></i>
+                            </div>
+                            <h5 class="fw-bold">Bolsas de Sangue</h5>
+                            <ul class="text-muted">
+                                <li>Controle em tempo real</li>
+                                <li>Validade dos hemocomponentes</li>
+                                <li>Tipos sanguíneos</li>
+                                <li>Rastreabilidade completa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="text-danger mb-3" style="width: 70px; height: 70px;">
+                                <i class="fa-4x fa-solid fa-clipboard-list"></i>
+                            </div>
+                            <h5 class="fw-bold">Exames Clínicos</h5>
+                            <ul class="text-muted">
+                                <li>Resultados de exames</li>
+                                <li>Testes sorológicos</li>
+                                <li>Armazenamento de laudos</li>
+                                <li>Integração com laboratórios</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="text-danger mb-3" style="width: 70px; height: 70px;">
+                                <i class="fa-4x fa-solid fa-hospital"></i>
+                            </div>
+                            <h5 class="fw-bold">Hospitais Parceiros</h5>
+                            <ul class="text-muted">
+                                <li>Cadastro de hospitais</li>
+                                <li>Solicitações de sangue</li>
+                                <li>Histórico de entregas</li>
+                                <li>Controle de estoque</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="text-danger mb-3" style="width: 70px; height: 70px;">
+                                <i class="fa-4x fa-solid fa-chart-simple"></i>
+                            </div>
+                            <h5 class="fw-bold">Estatísticas</h5>
+                            <ul class="text-muted">
+                                <li>Relatórios personalizados</li>
+                                <li>Dashboard analítico</li>
+                                <li>Previsão de demanda</li>
+                                <li>Indicadores de performance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5 py-5" id="database">
+        <div class="row justify-content-center mb-1">
+            <div class="col-lg-8 text-center">
+                <h2 class="fw-bold mb-3">Estrutura do Banco de Dados</h2>
+                <p class="lead">O coração do sistema HemoVida</p>
+            </div>
+        </div>
+        <div class="row g-4 align-items-center mb-4">
+            <div class="col-lg-5">
+                <div class="pe-lg-4">
+                    <h3 class="fw-bold text-danger mb-3">SQL como Tecnologia Central</h3>
+                    <p>O banco de dados foi projetado seguindo as melhores práticas de normalização para garantir:</p>
+                    <ul class="mb-4">
+                        <li class="mb-2"><strong>Integridade dos dados</strong> - Chaves primárias e estrangeiras bem definidas</li>
+                        <li class="mb-2"><strong>Desempenho</strong> - Índices estratégicos para consultas frequentes</li>
+                        <li class="mb-2"><strong>Segurança</strong> - Controle de acesso em diferentes níveis</li>
+                        <li><strong>Escalabilidade</strong> - Estrutura preparada para crescimento</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="card border-0">
+                    <div class="card-body p-3">
+                        <img src="images/database.png" class="img-fluid rounded" alt="Diagrama da Base de Dados">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card border-0 shadow h-100">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold text-danger mb-3">Principais Tabelas</h5>
+                        <ul class="text-muted">
+                            <li class="mb-2">Doadores (doadores)</li>
+                            <li class="mb-2">Doações (doacoes)</li>
+                            <li class="mb-2">Bolsas de Sangue (bolsas_sangue)</li>
+                            <li class="mb-2">Hospitais (hospitais)</li>
+                            <li class="mb-2">Transfusões (transfusoes)</li>
+                            <li>Exames (exames)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow h-100">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold text-danger mb-3">Relacionamentos</h5>
+                        <ul class="text-muted">
+                            <li class="mb-2">1 doador → N doações</li>
+                            <li class="mb-2">1 doação → 1 bolsa de sangue</li>
+                            <li class="mb-2">1 bolsa → N transfusões</li>
+                            <li class="mb-2">1 hospital → N transfusões</li>
+                            <li>1 doação → N exames</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow h-100">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold text-danger mb-3">Estatísticas</h5>
+                        <ul class="text-muted">
+                            <li class="mb-2">15 tabelas no total</li>
+                            <li class="mb-2">7 views para relatórios</li>
+                            <li class="mb-2">5 stored procedures</li>
+                            <li class="mb-2">12 triggers</li>
+                            <li>+50 consultas otimizadas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-light py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">Tecnologias Utilizadas</h2>
+                    <p class="lead">O stack tecnológico que tornou o projeto possível</p>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <div class="bg-danger-subtle text-danger rounded p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                            <i class="fa-2x fa-solid fa-database"></i>
+                        </div>
+                        <p class="mt-2 mb-0 fw-semibold">MySQL</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <div class="bg-danger-subtle text-danger rounded p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                            <i class="fa-2x fa-brands fa-laravel"></i>
+                        </div>
+                        <p class="mt-2 mb-0 fw-semibold">Laravel</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <div class="bg-danger-subtle text-danger rounded-circle p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                            <i class="fa-2x fa-brands fa-html5"></i>
+                        </div>
+                        <p class="mt-2 mb-0 fw-semibold">HTML5</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <div class="bg-danger-subtle text-danger rounded-circle p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                            <i class="fa-2x fa-brands fa-bootstrap"></i>
+                        </div>
+                        <p class="mt-2 mb-0 fw-semibold">Bootstrap</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <div class="bg-danger-subtle text-danger rounded-circle p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                            <i class="fa-2x fa-brands fa-js"></i>
+                        </div>
+                        <p class="mt-2 mb-0 fw-semibold">JavaScript</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <div class="p-3">
+                        <div class="bg-danger-subtle text-danger rounded-circle p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                            <i class="fa-2x fa-brands fa-github"></i>
+                        </div>
+                        <p class="mt-2 mb-0 fw-semibold">GitHub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-danger py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center text-white">
+                    <h2 class="display-6 fw-bold mb-4">Quer saber mais sobre o projeto?</h2>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
+                        <a href="team.html" class="btn btn-light btn-lg px-4 py-2">
+                            <i class="bi bi-envelope me-2"></i> Conheça a Nossa Equipa
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 HemoVida - Centro de Doações de Sangue. Todos os direitos reservados. Feito com <span class="text-danger">♡</span> por <span class="fw-bold">Programetes</span>™</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HemoVida</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+    <style>
+    .form-check-input:checked {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo_horizontal.png" alt="HemoVida" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon">
+                    <x-solar-hamburger-menu-broken class="fs-4 text-danger" />
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="about.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="project.html">Projeto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="team.html">Equipa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fw-bold" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-danger">Entrar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section bg-danger text-white py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Perguntas Frequentes</h1>
+                    <p class="lead mb-4">Encontre as respostas para as dúvidas mais comuns sobre a doação de sangue</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="mb-5">
+                    <p class="lead">
+                        Esta página foi criadq para esclarecer as dúvidas mais comuns sobre a doação de sangue, desde os requisitos básicos até situações específicas que podem afetar a sua elegibilidade.
+                        O nosso objetivo é incentivar a doação de sangue de forma segura e consciente, garantindo a saúde tanto do dador quanto do receptor.
+                    </p>
+                    <p class="text-danger fw-bold">A sua doação salva vidas!</p>
+                </div>
+
+                <div class="accordion accordion-flush" id="faqAccordion">
+                    <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                Posso dar sangue?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body bg-light">
+                                <ul class="mb-0">
+                                    <li><b>Idade e peso:</b> Maiores de 18 anos e mais de 50 kg.</li>
+                                    <li><b>Saúde:</b> Estilo de vida saudável e sem condições que comprometam a segurança do dador ou do receptor.</li>
+                                    <li><b>Intervalo entre doações:</b> 2 meses (máximo de 3 doações/ano para mulheres e 4 para homens).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                Não sei o meu tipo sanguíneo. Posso dar sangue?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body bg-light">
+                                <b>Sim.</b> Após a primeira doação, o seu tipo sanguíneo será identificado.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                Posso dar sangue após a vacinação contra COVID-19?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body bg-light">
+                                <ul class="mb-0">
+                                    <li><b>AstraZeneca/Janssen:</b> Suspensão de 7 dias, se assintomático.</li>
+                                    <li><b>Outras vacinas:</b> Sem suspensão, se assintomático.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                Posso dar sangue se tiver tido COVID-19?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body bg-light">
+                                <b>Sim</b>, após 14 dias sem sintomas.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                Posso dar sangue após cirurgia ou exames?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body bg-light">
+                                <ul class="mb-0">
+                                    <li><b>Cirurgia geral:</b> 4 meses.</li>
+                                    <li><b>Pequenas cirurgias:</b> 1 semana.</li>
+                                    <li><b>Endoscopia/colonoscopia:</b> 4 meses.</li>
+                                    <li><b>Tratamento dentário:</b> 7 dias (extração) ou 24 horas (limpeza).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                                Posso dar sangue se tiver gripe?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body bg-light">
+                                <b>Não.</b> Aguarde 15 dias após a recuperação.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+                                Posso dar sangue se tiver tatuagem ou piercing?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body bg-light">
+                                <b>Sim</b>, após 4 meses da realização.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+                                Posso dar sangue se tiver diabetes ou hipertensão?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body bg-light">
+                                <ul class="mb-0">
+                                    <li><b>Diabetes tipo 1:</b> Não pode dar sangue.</li>
+                                    <li><b>Diabetes tipo 2:</b> Pode, se controlada com dieta ou medicação oral.</li>
+                                    <li><b>Hipertensão:</b> Pode, se controlada e sem complicações.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
+                                Posso dar sangue se estiver com o período?
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body bg-light">
+                                <b>Sim</b>, a menos que tenha dores intensas ou fluxo muito abundante.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen">
+                                Posso dar sangue se estiver grávida ou a amamentar?
+                            </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body bg-light">
+                                <ul class="mb-0">
+                                    <li><b>Grávida:</b> Não pode dar sangue. Aguarde 6 meses após o parto.</li>
+                                    <li><b>A amamentar:</b> Aguarde 90 dias após o término.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven">
+                                Posso dar sangue se tiver viajado recentemente?
+                            </button>
+                        </h2>
+                        <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body bg-light">
+                                Depende do destino e exposição a doenças infecciosas. <b>Consulte o serviço de sangue.</b>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve">
+                                Quais são os cuidados pós-doação?
+                            </button>
+                        </h2>
+                        <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body bg-light">
+                                <ul class="mb-0">
+                                    <li>Beba líquidos e evite atividades perigosas por 12 horas.</li>
+                                    <li>Pilotos e controladores de tráfego aéreo devem aguardar 12-72 horas para retomar atividades.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-danger py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center text-white">
+                    <h2 class="display-5 fw-bold mb-4">Ainda tem dúvidas?</h2>
+                    <p class="lead mb-5">Entre em contato connosco para mais informações sobre a doação de sangue.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
+                        <a href="/contato" class="btn btn-light btn-lg px-4 py-2">
+                            Fale connosco
+                        </a>
+                        <a href="/agendamento" class="btn btn-outline-light btn-lg px-4 py-2">
+                            Agendar doação
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 HemoVida - Centro de Doações de Sangue. Todos os direitos reservados. Feito com <span class="text-danger">♡</span> por <span class="fw-bold">Programetes</span>™</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
