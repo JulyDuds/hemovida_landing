@@ -1,7 +1,9 @@
-#🩸 HemoVida – Projeto de Base de Dados para Gestão de Sangue
+## 🩸 HemoVida – Projeto de Base de Dados para Gestão de Sangue
+
 Este projeto foi desenvolvido no âmbito do curso Técnico Especialista de Gestão e Programação de Sistemas Informáticos – 2º ano, como parte de uma aula prática sobre bases de dados.
 
-##🎯 Objetivo
+## 🎯 Objetivo
+
 O objetivo deste trabalho foi criar uma solução para a gestão eficiente do ciclo do sangue, desde o registo de dadores até à distribuição dos hemocomponentes, focando-se na modelação e implementação de uma base de dados relacional.
 O projeto permitiu aplicar conceitos de modelagem de dados, normalização, criação de tabelas, definição de relações e implementação em sistemas de gestão de bases de dados (SGBD).
 
@@ -19,7 +21,8 @@ As tecnologias utilizadas incluíram:
 
 **GitHub** para controlo de versões e colaboração
 
-##🧱 Estrutura do Projeto
+## 🧱 Estrutura do Projeto
+
 O trabalho foi organizado em várias etapas, de acordo com as boas práticas de modelagem de bases de dados:
 
 Levantamento de Requisitos: Identificação dos processos e informações essenciais para a gestão do sangue, como dadores, dádivas, bolsas, exames, stocks e distribuição.
@@ -34,7 +37,7 @@ Testes e Validação: Inserção de dados de exemplo e simulação de operaçõe
 
 Documentação: Explicação dos modelos, fluxos de dados e exemplos de consultas SQL.
 
-##🏥 Funcionalidades
+## 🏥 Funcionalidades
 Registo e consulta de dadores e dádivas
 
 Gestão de bolsas de sangue e respetivos exames
@@ -47,7 +50,7 @@ Relatórios sobre doações, stocks e distribuição
 
 Sistema de permissões para diferentes perfis de utilizador
 
-##🚀 Resultados
+## 🚀 Resultados
 O projeto permitiu consolidar os conhecimentos teóricos de modelagem de dados e demonstrar a importância de uma base de dados bem estruturada para a rastreabilidade, segurança e eficiência na gestão de sangue.
 A implementação prática mostrou como as tecnologias web e os SGBD podem ser integrados para criar soluções reais e relevantes para a área da saúde.
 
@@ -56,7 +59,7 @@ A implementação prática mostrou como as tecnologias web e os SGBD podem ser i
 **Acesso:** [Hemovida Demo](https://julyduds.github.io/hemovida_landing/)
 
 
-##👩‍💻 Equipa de Desenvolvimento
+## 👤 Créditos
 Trabalho realizado por:
 - [Juliana Alves](https://github.com/JulyDuds)
 - [Babi Sobrinho](https://github.com/babisobrinho)
@@ -64,6 +67,6 @@ Trabalho realizado por:
 - [Rebeca Santos](https://github.com/RebecaSantosb)
 - [Aline Armando](https://github.com/kiamy6)
 
-##📚 IEFP Leiria
+📚 IEFP Leiria
 🛠️ Desenvolvido com dedicação, criatividade e paixão pela tecnologia! ❤️‍🔥
 
